@@ -1,0 +1,156 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/* Helpers */
+.text-special {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Custom */
+#index-banner img {
+  bottom: 5%;
+}
+.parallax-container {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+.parallax-container .container {
+  display: flex;
+  justify-content: start;
+}
+.parallax-container .container .row {
+  margin-left: unset;
+}
+.parallax-container .header {
+  padding: 0 6px 4px !important;
+  background: rgba(0, 0, 0, .2);
+  border-radius: 2px;
+  border: unset !important;
+  text-transform: capitalize;
+}
+.section li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+.section li i {
+  margin-right: 10px;
+}
+.row{
+  display: flex;
+  gap: 10px;
+}
+.row .col {
+  position: relative;
+  padding: .75em;
+  padding-bottom: 4em;
+  border: 1px solid #26a69a;
+  border-radius: 2px;
+}
+.row .col .icon-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row .col .icon-block h2 svg {
+  filter: drop-shadow(5px 10px 4px rgba(0,0,0,.5));
+  transition: transform .2s ease-in-out;
+}
+.row .col:hover .icon-block h2 svg {
+  transform: translateY(-2px);
+}
+.row .col .icon-block h5 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: transform .2s ease-in-out;
+}
+.row .col:hover .icon-block h5 {
+  transform: translateY(2px);
+}
+.row .col .icon-block h5 small {
+  font-size: small;
+}
+.row .col .icon-block span.badge {
+  position: absolute;
+  bottom: .75em;
+  right: .75em;
+  font-size: 1em;
+  text-transform: capitalize;
+  transition: transform .2s ease-in-out;
+}
+.row .col:hover .icon-block span.badge {
+  transform: scale(1.05);
+}
+.row .col .icon-block span.badge.purple {
+  bottom: 2.5em;
+}
+#accomodation.container span.badge {
+  position: static;
+  bottom: 0;
+  margin-right: 10px;
+}
+#accomodation.container ul li small {
+  margin-left: 5px;
+}
