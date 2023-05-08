@@ -402,7 +402,7 @@
                 7 Days Full Board
               </li>
               <li>
-                <b class="text-special">Extras:</b>
+                <b class="text-special center">Extras:</b>
               </li>
               <li>
                 <i class="material-icons teal-text">bubble_chart</i>
@@ -416,12 +416,12 @@
               </li>
               <li>
                 <i class="material-icons teal-text">bubble_chart</i>
-                <span class="new badge teal z-depth-2" data-badge-caption="">$10</span>
+                <span class="new badge teal z-depth-2" data-badge-caption="">$10 per person</span>
                 octopus hunting
               </li>
               <li>
                 <i class="material-icons teal-text">bubble_chart</i>
-                <span class="new badge teal z-depth-2" data-badge-caption="">$80</span>
+                <span class="new badge teal z-depth-2" data-badge-caption="">$80 per person</span>
                 night snorkelling
               </li>
               <li>
@@ -458,6 +458,13 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
+  <!-- Fix banners for pdf -->
+  <script>
+    const banners = document.querySelectorAll('.parallax-container img');
+    banners[1].style.bottom = '-95%'
+    banners[2].style.bottom = '-70%'
+    banners[3].style.bottom = '-110%'
+  </script>
 </body>
 
 </html>

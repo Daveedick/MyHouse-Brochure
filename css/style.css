@@ -61,11 +61,32 @@ footer.page-footer {
 
 /* Helpers */
 .text-special {
+  margin: auto;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 /* Custom */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #064273;
+  border-radius: 2px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #064273;
+}
+body {
+  background: #f2f2f2;
+}
 #index-banner img {
   bottom: 5%;
 }
@@ -73,6 +94,7 @@ footer.page-footer {
   display: flex;
   justify-content: start;
   align-items: end;
+  border-radius: 2px;
 }
 .parallax-container .container {
   display: flex;
@@ -81,58 +103,62 @@ footer.page-footer {
 .parallax-container .container .row {
   margin-left: unset;
 }
-.parallax-container .header {
+.parallax-container .section .header {
   padding: 0 6px 4px !important;
-  background: rgba(0, 0, 0, .2);
+  background: rgba(0, 0, 0, .2) !important;
   border-radius: 2px;
   border: unset !important;
   text-transform: capitalize;
+  font-weight: 100;
 }
 .section li {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  font-weight: 300;
   text-transform: capitalize;
 }
 .section li i {
   margin-right: 10px;
 }
-.row{
+.section .row{
   display: flex;
   gap: 10px;
 }
-.row .col {
+.section .row .col {
   position: relative;
   padding: .75em;
   padding-bottom: 4em;
+  background: white;
   border: 1px solid #26a69a;
   border-radius: 2px;
 }
-.row .col .icon-block {
+.section .row .col .icon-block {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.row .col .icon-block h2 svg {
-  filter: drop-shadow(5px 10px 4px rgba(0,0,0,.5));
+.section .row .col .icon-block h2 svg {
+  filter: drop-shadow(5px 10px 4px rgba(20,20,20,.5));
   transition: transform .2s ease-in-out;
 }
-.row .col:hover .icon-block h2 svg {
+.section .row .col:hover .icon-block h2 svg {
   transform: translateY(-2px);
 }
-.row .col .icon-block h5 {
+.section .row .col .icon-block h5 {
   margin-bottom: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: 200;
   transition: transform .2s ease-in-out;
 }
-.row .col:hover .icon-block h5 {
+.section .row .col:hover .icon-block h5 {
   transform: translateY(2px);
 }
-.row .col .icon-block h5 small {
+.section .row .col .icon-block h5 small {
   font-size: small;
 }
-.row .col .icon-block span.badge {
+.section .row .col .icon-block span.badge {
   position: absolute;
   bottom: .75em;
   right: .75em;
@@ -140,10 +166,10 @@ footer.page-footer {
   text-transform: capitalize;
   transition: transform .2s ease-in-out;
 }
-.row .col:hover .icon-block span.badge {
+.section .row .col:hover .icon-block span.badge {
   transform: scale(1.05);
 }
-.row .col .icon-block span.badge.purple {
+.section .row .col .icon-block span.badge.purple {
   bottom: 2.5em;
 }
 #accomodation.container span.badge {
