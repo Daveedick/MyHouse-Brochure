@@ -6,18 +6,18 @@
  * Made By MaterializeCSS.com
  */
 
-nav ul a,
+/* nav ul a,
 nav .brand-logo {
   color: #444;
-}
+} */
 
 p {
   line-height: 2rem;
 }
 
-.sidenav-trigger {
+/* .sidenav-trigger {
   color: #26a69a;
-}
+} */
 
 .parallax-container {
   min-height: 380px;
@@ -67,28 +67,33 @@ footer.page-footer {
 }
 
 /* Custom */
-/* width */
 ::-webkit-scrollbar {
   width: 8px;
 }
-/* Track */
 ::-webkit-scrollbar-track {
   background: white;
 }
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #064273;
   border-radius: 2px;
 }
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #064273;
 }
 body {
   background: #f2f2f2;
 }
-#index-banner img {
+#index-banner .parallax img {
   bottom: 5%;
+}
+.logo {
+  width: 80px;
+  height: auto;
+}
+#index-banner .container h1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .parallax-container {
   display: flex;
@@ -109,7 +114,7 @@ body {
   border-radius: 2px;
   border: unset !important;
   text-transform: capitalize;
-  font-weight: 100;
+  font-weight: 300;
 }
 .section li {
   display: flex;
@@ -175,8 +180,18 @@ body {
 #accomodation.container span.badge {
   position: static;
   bottom: 0;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 #accomodation.container ul li small {
   margin-left: 5px;
+}
+#contacts .section .row .col {
+  padding: 1rem;
+}
+#contacts li {
+  display: flex;
+  gap: 10px;
+}
+a {
+  color: #26a69a;
 }
