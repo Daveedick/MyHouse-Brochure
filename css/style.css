@@ -83,6 +83,9 @@ footer.page-footer {
 body {
   background: #f2f2f2;
 }
+#ruV {
+  display: none;
+}
 /* #index-banner .parallax img {
   bottom: 5%;
 } */
@@ -136,12 +139,21 @@ body {
   text-transform: capitalize;
   font-weight: 300;
 }
+#ruV .parallax-container .section .header {
+  text-transform: unset;
+}
 .section li {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
   font-weight: 300;
   text-transform: capitalize;
+}
+#ruV .section li {
+  text-transform: unset;
+}
+.section li:has(a[data-purpose="langSwitcher"]) {
+  justify-content: flex-end;
 }
 .section li i {
   margin-right: 10px;
