@@ -152,6 +152,11 @@ body {
 #ruV .section li {
   text-transform: unset;
 }
+/* [data-purpose="langSwitcher"] {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+} */
 .section li:has(a[data-purpose="langSwitcher"]) {
   justify-content: flex-end;
 }
